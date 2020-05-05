@@ -13,4 +13,7 @@ Sample metrics WAR leveraging MicroMeter JMX Registry
 * A `cf.yaml` file to deploy the WAR as CF application. Exposes JMX remote port on 5000, which can be port-forwarded.
 * Use jconsole to check MBean registry. 
 
+
+### JMX
+`cf ssh mmjmx -k -N -T -L localhost:5000:localhost:5000`       
   

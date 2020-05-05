@@ -8,5 +8,7 @@ applications:
     env:
       TARGET_RUNTIME: tomcat
       IT_SYSTEM_ID: it-dev
+      JBP_CONFIG_JMX: '{enabled: true}'
+      JBP_CONFIG_JAVA_OPTS: 'java_opts: ''-Dcom.sun.management.jmxremote.port=5000 -Dcom.sun.management.jmxremote.rmi.port=5000 -Djava.rmi.server.hostname=localhost -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false'''
     buildpacks:
       - sap_java_buildpack
